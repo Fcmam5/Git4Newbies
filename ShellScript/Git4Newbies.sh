@@ -18,13 +18,14 @@ if [ $choice = 1 ]; then
 			 git config --global user.email "\"$usrmail\""
 	
 elif [ $choice = 2 ]; then
-	echo "Make sure that i'm on the path of your project"
+	echo "Make sure that i'm on the path of your project
+	"
 	echo "Creating a new git repository"
 	git init
-	read -p "Give me your folder's name " foldername
-	git add $foldername"/"
+	read -p "Give me your folder's name: " foldername
+	git add $foldername
 	git commit -m "Added by Git4Newbies"
-	read -p "Now git me your repository's link" repolink
+	read -p "Now git me your repository's link: " repolink
 	git remote add origin $repolink
 	git push -u origin master
 	
@@ -40,7 +41,9 @@ echo "..███........███....█▄..███...███...███.
 echo "..███........███....███.███...███...███...███....███.███...███...███.";
 echo "..███........████████▀...▀█...███...█▀....███....█▀...▀█...███...█▀..";
 echo ".....................................................................";
-echo ".[Facebook.co/Mr.Fcmam5].[Twitter.com/Fcmam].[Youtube.com/user/Fcmam5]"
+echo ".[Facebook.com/Mr.Fcmam5].[Twitter.com/Fcmam].[Youtube.com/user/Fcmam5]"
+echo ".....[Github.com/Fcmam5]..</ Good Luck >..[Launchpad.net/~fcmam5]....."
+echo "...............    https://youtu.be/LBEQuPPKyEI    ..................."
 echo 
 fi
 
