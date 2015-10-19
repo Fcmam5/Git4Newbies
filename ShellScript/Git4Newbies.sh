@@ -25,7 +25,7 @@ elif [ $choice = 2 ]; then
 	read -p "Give me your folder's name: " foldername
 	git add $foldername
 	git commit -m "Added by Git4Newbies"
-	read -p "Now git me your repository's link: " repolink
+	read -p "Now give me your repository's link: " repolink
 	git remote add origin $repolink
 	git push -u origin master
 	
