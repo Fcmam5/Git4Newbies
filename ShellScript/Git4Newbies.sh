@@ -1,4 +1,5 @@
 #!/bin/bash
+# Done by Fortas Abdeldjalil Check : https://github.com/Fcmam5/Git4Newbies/blob/master/ShellScript/Git4Newbies.sh
 echo "Welcome to Git4Newbies script"
 
 read -p "
@@ -13,7 +14,7 @@ Your choice is: " choice
 
 if [ $choice = 1 ]; then
 	read -p "Enter your user name: " usrname
-			 git config --global user.user "\"$usrname\""
+			 git config --global user.name "\"$usrname\""
 	read -p "Enter your email: " usrmail
 			 git config --global user.email "\"$usrmail\""
 	
