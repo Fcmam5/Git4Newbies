@@ -7,6 +7,9 @@ read -p "
  Please choose an item :
 [1] Setting up Git configuration.
 [2] Pushing a new Git to a repository.
+[3] Rest origin (Remove origin)
+[4] Reset All (Removing git origin and deleting local git repository)
+
 
 [!] About /~ Git4Newbies ~/
 
@@ -29,7 +32,16 @@ elif [ $choice = 2 ]; then
 	read -p "Now give me your repository's link: " repolink
 	git remote add origin $repolink
 	git push -u origin master
-	
+
+elif [ $choice = 3 ]; then
+	echo "I will remove your git orign"
+		git remote remove origin
+		
+elif [ $choice = 4 ]; then
+	echo "Reset to default by delting local git repository"
+	git remote remove origin
+	sudo rm -rf .git/	
+
 elif [ $choice = ! ]; then 
 clear
 echo "Script by Fortas Abdeldjalil."
